@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/FelizCoder/crewstand.grafana/compare/v1.0.0...v1.0.1) (2025-03-24)
+
+
+### Bug Fixes
+
+* **dashboards:** show all proportional Valve values as default ([5973133](https://github.com/FelizCoder/crewstand.grafana/commit/5973133930ca77108b495aa722eea29396897953))
+
 ## 1.0.0 (2025-01-27)
 
 
