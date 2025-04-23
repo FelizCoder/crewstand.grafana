@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/FelizCoder/crewstand.grafana/compare/v1.0.1...v1.1.0) (2025-04-23)
+
+
+### Features
+
+* **provisioning/dashboards:** Add new "Classification" dashboard for visualization ([107736b](https://github.com/FelizCoder/crewstand.grafana/commit/107736bded7a278c0c02f608c75c147da8e8ea71))
+
 ## [1.0.1](https://github.com/FelizCoder/crewstand.grafana/compare/v1.0.0...v1.0.1) (2025-03-24)
 
 
