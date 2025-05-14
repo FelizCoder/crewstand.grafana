@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/FelizCoder/crewstand.grafana/compare/v1.1.0...v1.1.1) (2025-05-14)
+
+
+### Bug Fixes
+
+* **classification:** enhance query with aggregation ([1a73957](https://github.com/FelizCoder/crewstand.grafana/commit/1a739575faf4558b3e442ad89c8ad97f0b4e6347))
+
 ## [1.1.0](https://github.com/FelizCoder/crewstand.grafana/compare/v1.0.1...v1.1.0) (2025-04-23)
 
 
