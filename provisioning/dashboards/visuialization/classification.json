@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 4,
+  "id": 2,
   "links": [],
   "panels": [
     {
@@ -108,7 +108,7 @@
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
           },
-          "query": "from(bucket: \"mock_tests\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"flowmeter\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"reading\")\r\n  |> filter(fn: (r) => r[\"id\"] == \"0\")\r\n",
+          "query": "from(bucket: \"mock_tests\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"flowmeter\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"reading\")\r\n  |> filter(fn: (r) => r[\"id\"] == \"0\")\r\n  |> aggregateWindow(every: 2s, fn: mean, createEmpty: false)\r\n",
           "refId": "A"
         }
       ],
@@ -202,7 +202,7 @@
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
           },
-          "query": "from(bucket: \"mock_tests\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"flowmeter\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"reading\")\r\n  |> filter(fn: (r) => r[\"id\"] == \"0\")\r\n",
+          "query": "from(bucket: \"mock_tests\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"flowmeter\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"reading\")\r\n  |> filter(fn: (r) => r[\"id\"] == \"0\")\r\n  |> aggregateWindow(every: 2s, fn: mean, createEmpty: false)\r\n",
           "refId": "A"
         }
       ],
